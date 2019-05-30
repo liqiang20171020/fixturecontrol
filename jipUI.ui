@@ -1290,22 +1290,17 @@
                </property>
                <item>
                 <property name="text">
-                 <string>王松</string>
+                 <string>王志勇</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>赵东杰</string>
+                 <string>马迪</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>彭豪豪</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>王广德</string>
+                 <string>杨阳阳</string>
                 </property>
                </item>
               </widget>
@@ -1324,17 +1319,17 @@
                </property>
                <item>
                 <property name="text">
-                 <string>HW_BOSA1</string>
+                 <string>SMT_1</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>HW_BOSA2</string>
+                 <string>SMT_2</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>HW_BOSA3</string>
+                 <string>SMT_3</string>
                 </property>
                </item>
               </widget>
@@ -1518,17 +1513,12 @@
                </property>
                <item>
                 <property name="text">
-                 <string>李令保</string>
+                 <string>杨阳阳</string>
                 </property>
                </item>
                <item>
                 <property name="text">
-                 <string>唐亚飞</string>
-                </property>
-               </item>
-               <item>
-                <property name="text">
-                 <string>杨洋</string>
+                 <string>王志勇</string>
                 </property>
                </item>
               </widget>

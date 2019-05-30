@@ -12,7 +12,7 @@ class FixtureControl(QMainWindow, jipUI.Ui_MainWindow):
     def __init__(self):
         super(FixtureControl, self).__init__()
         self.setupUi(self)
-        self.setWindowTitle('治具管控软件V1.0.5')
+        self.setWindowTitle('治具管控软件V1.0.6')
         self.setWindowIcon(QtGui.QIcon('ball.ico'))
 
         self.tabWidget.currentChanged.connect(self.choseTab)
@@ -48,6 +48,8 @@ class FixtureControl(QMainWindow, jipUI.Ui_MainWindow):
         self.comboBox_3.setCurrentIndex(-1)
         self.comboBox_2.setCurrentIndex(-1)
         self.comboBox_auditor.setCurrentIndex(-1)
+
+        self.lineEdit_serino_4.returnPressed.connect(self.thermocoupleGridAutogetMessage)
 
         try:
             unclock = codelock.CodeLock()
@@ -919,8 +921,8 @@ class FixtureControl(QMainWindow, jipUI.Ui_MainWindow):
         tg_notes = self.textEdit_3.toPlainText()                #备注
 
         if len(str(self.comboBox_model_3.currentText())) == 0 or len(tg_pcb) == 0 or len(tg_sn) == 0 or len(tg_machine) == 0 or \
-        len(str(self.comboBox_board_2.currentIndex())) == 0 or len(str(self.comboBox_result_3.currentIndex())) == 0 or len(str(self.comboBox_3.currentIndex())) == 0 \
-        or len(str(self.comboBox_2.currentIndex())) == 0 or len(str(self.comboBox_auditor.currentIndex())) == 0 or len(tg_manager) == 0:
+        len(str(self.comboBox_board_2.currentText())) == 0 or len(str(self.comboBox_result_3.currentText())) == 0 or len(str(self.comboBox_3.currentText())) == 0 \
+        or len(str(self.comboBox_2.currentText())) == 0 or len(str(self.comboBox_auditor.currentText())) == 0 or len(tg_manager) == 0:
             QMessageBox.warning(self, '警告', '当前信息输入不完整！')
         else:
             sql1 = "select serino, is_valid from fixture_check where model = '测温板' and serino = '{}' order by save_time desc limit 1".format(tg_sn)
@@ -1048,7 +1050,18 @@ class FixtureControl(QMainWindow, jipUI.Ui_MainWindow):
             QMessageBox.information(self, '提示', '当前编码的测温板已经停用或使用次数已用完！')
             self.thermocoupleGridCanUse = 0
 
-
+    def thermocoupleGridAutogetMessage(self):                   #除了新做，其他2个自动带出
+        sn = self.lineEdit_serino_4.text()                              #CWB-338
+        if self.comboBox_model_3.currentIndex() > 0 and len(sn) > 0:
+            sql = "select pcb_lot, worker_id, machine_type, gw_thickness, process_name from fixture_check where serino = '{}' order by save_time desc limit 1".format(sn)
+            self.cur.execute(sql)
+            result = self.cur.fetchall()
+            if self.cur.rowcount == 1:
+                self.lineEdit_pcb_2.setText(str(result[0][0]))
+                self.lineEdit_machineid_3.setText(str(result[0][2]))
+                self.comboBox_board_2.setCurrentText(str(result[0][4]))
+                self.comboBox_result_3.setCurrentText(str(result[0][1]))
+                self.comboBox_3.setCurrentText(str(result[0][3]))
 
 class UserManagement(QWidget, usermanagement.Ui_Form):
     def __init__(self, parent):
@@ -1118,7 +1131,7 @@ class UserManagement(QWidget, usermanagement.Ui_Form):
         elif len(name) > 0 and len(code) > 0:
             sql = "select `code`, `name`, user_privieges from user_access where `code` = '{0}' and `name` = '{1}'".format(code, name)
         else:
-            pass
+            sql = "select `code`, `name`, user_privieges from user_access"
         self.user_cur.execute(sql)
         result = self.user_cur.fetchall()
         num = self.user_cur.rowcount
@@ -1196,8 +1209,8 @@ class ProcessResult(QMainWindow, processui.Ui_MainWindow):
             wb.close()
             app.quit()
 
-# if __name__ == "__main__":
-#         app = QApplication(sys.argv)
-#         ui = FixtureControl()
-#         ui.show()
-#         sys.exit(app.exec_())
+if __name__ == "__main__":
+        app = QApplication(sys.argv)
+        ui = FixtureControl()
+        ui.show()
+        sys.exit(app.exec_())
