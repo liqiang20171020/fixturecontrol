@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>878</width>
+    <height>633</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab_1">
+       <attribute name="title">
+        <string>治具验收</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1,3,6,2">
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>14</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;新治具验收&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="title">
+             <string>验收基础信息</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <property name="horizontalSpacing">
+              <number>9</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>种类：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_model">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>刮刀</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>钢网</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>印刷治具</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLineEdit" name="lineEdit_pcb"/>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>PCB料号：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="6">
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>板面：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_workerid"/>
+             </item>
+             <item row="1" column="4">
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>机种/型号：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>工号：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QLineEdit" name="lineEdit_storeid"/>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>库位编号：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="5">
+              <widget class="QLineEdit" name="lineEdit_machineid"/>
+             </item>
+             <item row="1" column="9">
+              <widget class="QComboBox" name="comboBox_result">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>PASS</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>FAIL</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="7">
+              <widget class="QComboBox" name="comboBox_board">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>BOT</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>TOP</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>B/T</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="8">
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>验收结果：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="7">
+              <widget class="QLineEdit" name="lineEdit_version"/>
+             </item>
+             <item row="0" column="5">
+              <widget class="QComboBox" name="comboBox_gw">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <property name="duplicatesEnabled">
+                <bool>false</bool>
+               </property>
+               <property name="frame">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>SUS304</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>SUS304+纳米</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>FG</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>FG+纳米</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>钢网材质：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="6">
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>版本：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="9">
+              <widget class="QLineEdit" name="lineEdit_serino"/>
+             </item>
+             <item row="0" column="8">
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>序列号：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>治具料号：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="lineEdit_zj"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>验收项目详细信息</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QGroupBox" name="groupBox_4">
+               <property name="title">
+                <string>检验项目</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <item>
+                 <widget class="QTableWidget" name="tableWidget">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>10</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <column>
+                   <property name="text">
+                    <string>检验项目</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>检验标准</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>检验工具</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>实际值</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>判断结果</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>备注</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_5">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>确认验收</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>钢网厚度：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_gw_thickness"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>备注：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="textEdit"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton">
+               <property name="text">
+                <string>验收</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_15">
+          <property name="palette">
+           <palette>
+            <active>
+             <colorrole role="WindowText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Text">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </active>
+            <inactive>
+             <colorrole role="WindowText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Text">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </inactive>
+            <disabled>
+             <colorrole role="WindowText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>120</red>
+                <green>120</green>
+                <blue>120</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Text">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>120</red>
+                <green>120</green>
+                <blue>120</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </disabled>
+           </palette>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>首次验收，请一次录入治具各项基础信息；非首次验收，请直接扫描治具序列号。</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>治具管控</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6" stretch="1,3,6,2">
+          <item>
+           <widget class="QGroupBox" name="groupBox_6">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_17">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>14</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;治具管控操作&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_7">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="title">
+             <string>使用操作</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5" columnstretch="1,3,1,3,1,3,1,3" columnminimumwidth="1,3,1,3,1,3,1,3">
+             <item row="1" column="7">
+              <widget class="QComboBox" name="comboBox_result_2">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>72小时下线</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>8小时下线</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>更换工单</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>刮刀损坏</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>钢网损伤</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>钢网脏污</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>临时停线</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="6">
+              <widget class="QLabel" name="label_24">
+               <property name="text">
+                <string>原因：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="5">
+              <widget class="QComboBox" name="comboBox_gw_2">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="editable">
+                <bool>false</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>领用</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>出库检查</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>上线</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>下线</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>归还检查</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>清洁</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>检查</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>入库</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <widget class="QLabel" name="label_25">
+               <property name="text">
+                <string>操作</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_18">
+               <property name="text">
+                <string>种类：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_model_2">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>刮刀</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>钢网</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>印刷治具</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_19">
+               <property name="text">
+                <string>序列号：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_workerid_2"/>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLineEdit" name="lineEdit_serino_2"/>
+             </item>
+             <item row="0" column="7">
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="text">
+                <string>确认</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QComboBox" name="comboBox_line">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>YS_SMT1-1</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>YS_SMT1-2</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>YS_SMT3</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="4">
+              <widget class="QLabel" name="label_21">
+               <property name="text">
+                <string>工单：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_22">
+               <property name="text">
+                <string>员工工号：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLabel" name="label_23">
+               <property name="text">
+                <string>线别：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="5">
+              <widget class="QLineEdit" name="lineEdit_machineid_2"/>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_28">
+               <property name="text">
+                <string>使用次数：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="lineEdit_use_age">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_8">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>其他操作</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <widget class="QGroupBox" name="groupBox_9">
+               <property name="title">
+                <string>检验项目</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_8">
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_2">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>10</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <column>
+                   <property name="text">
+                    <string>检验项目</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>检验标准</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>检验工具</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>实际值</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>判断结果</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>备注</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_10">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>状态变更</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="label_29">
+               <property name="text">
+                <string>状态：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox">
+               <item>
+                <property name="text">
+                 <string>可用</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>暂停</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>报废</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_30">
+               <property name="text">
+                <string>备注：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="textEdit_2"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="text">
+                <string>变更</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_20">
+          <property name="palette">
+           <palette>
+            <active>
+             <colorrole role="WindowText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Text">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </active>
+            <inactive>
+             <colorrole role="WindowText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>255</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Text">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </inactive>
+            <disabled>
+             <colorrole role="WindowText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>120</red>
+                <green>120</green>
+                <blue>120</blue>
+               </color>
+              </brush>
+             </colorrole>
+             <colorrole role="Text">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>120</red>
+                <green>120</green>
+                <blue>120</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </disabled>
+           </palette>
+          </property>
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>请选择治具种类</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>治具状态查询</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QGroupBox" name="groupBox_11">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>查询</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="label_16">
+               <property name="text">
+                <string>序列号</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_serino_3"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_26">
+               <property name="text">
+                <string>线体</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_line"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="5,1">
+            <item>
+             <widget class="QLabel" name="label_27">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_4">
+              <property name="font">
+               <font>
+                <family>微软雅黑</family>
+                <pointsize>11</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>查询</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tableWidget_3">
+            <property name="font">
+             <font>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <column>
+             <property name="text">
+              <string>序列号</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>状态</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>线体</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>工单</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>机种/型号</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>PCB料号</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>操作时间</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>操作人员</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>钢网厚度</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>厚度备注</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>库位号码</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>下线原因</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>使用备注</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>机种版本</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>板面</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>状态</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>用量</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>种类</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>审核人</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>制程段</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>测温板管理</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_15">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_12" stretch="1,3,6,2">
+          <item>
+           <widget class="QGroupBox" name="groupBox_12">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_31">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>14</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;测温板管理&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_13">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="title">
+             <string>验收基础信息</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <property name="horizontalSpacing">
+              <number>9</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_32">
+               <property name="text">
+                <string>状态：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_model_3">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>新做</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>正在使用</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>报废</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_42">
+               <property name="text">
+                <string>板厚：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_35">
+               <property name="text">
+                <string>机种名称：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_machineid_3"/>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLabel" name="label_34">
+               <property name="text">
+                <string>制程段：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QComboBox" name="comboBox_board_2">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>SMT</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>DIP</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="4">
+              <widget class="QLabel" name="label_38">
+               <property name="text">
+                <string>制作人：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="5">
+              <widget class="QComboBox" name="comboBox_result_3">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>王松</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>赵东杰</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>彭豪豪</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>王广德</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QLabel" name="label_36">
+               <property name="text">
+                <string>线别：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="3">
+              <widget class="QComboBox" name="comboBox_2">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>HW_BOSA1</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>HW_BOSA2</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>HW_BOSA3</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="2" column="4">
+              <widget class="QLabel" name="label_37">
+               <property name="text">
+                <string>使用次数：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="5">
+              <widget class="QLabel" name="label_39">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 230);</string>
+               </property>
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QComboBox" name="comboBox_3">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>1.0</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>1.6</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>2.0</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>3.0</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>3.3</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_41">
+               <property name="text">
+                <string>编号：</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLineEdit" name="lineEdit_serino_4"/>
+             </item>
+             <item row="0" column="5">
+              <widget class="QLineEdit" name="lineEdit_pcb_2"/>
+             </item>
+             <item row="0" column="4">
+              <widget class="QLabel" name="label_33">
+               <property name="text">
+                <string>PCB料号：</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_14">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>验收项目详细信息</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_13">
+             <item>
+              <widget class="QGroupBox" name="groupBox_15">
+               <property name="title">
+                <string>检验项目</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_14">
+                <item>
+                 <widget class="QTableWidget" name="tableWidget_4">
+                  <property name="font">
+                   <font>
+                    <family>微软雅黑</family>
+                    <pointsize>10</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <column>
+                   <property name="text">
+                    <string>检验项目</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>检验标准</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>检验工具</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>实际值</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>判断结果</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>备注</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_16">
+            <property name="font">
+             <font>
+              <family>微软雅黑</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>确认验收</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="label_43">
+               <property name="text">
+                <string>审核人：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_auditor">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+               <item>
+                <property name="text">
+                 <string>李令保</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>唐亚飞</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>杨洋</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_44">
+               <property name="text">
+                <string>备注：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="textEdit_3">
+               <property name="font">
+                <font>
+                 <family>微软雅黑</family>
+                 <pointsize>10</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_5">
+               <property name="text">
+                <string>录入</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_40">
+          <property name="font">
+           <font>
+            <family>微软雅黑</family>
+            <pointsize>14</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>请扫描测温板编号</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>878</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>人员管理</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>comboBox_model</tabstop>
+  <tabstop>lineEdit_pcb</tabstop>
+  <tabstop>comboBox_gw</tabstop>
+  <tabstop>lineEdit_version</tabstop>
+  <tabstop>lineEdit_serino</tabstop>
+  <tabstop>lineEdit_workerid</tabstop>
+  <tabstop>lineEdit_storeid</tabstop>
+  <tabstop>lineEdit_machineid</tabstop>
+  <tabstop>comboBox_board</tabstop>
+  <tabstop>comboBox_result</tabstop>
+  <tabstop>lineEdit_zj</tabstop>
+  <tabstop>tableWidget</tabstop>
+  <tabstop>lineEdit_gw_thickness</tabstop>
+  <tabstop>textEdit</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>comboBox_model_2</tabstop>
+  <tabstop>lineEdit_serino_2</tabstop>
+  <tabstop>comboBox_gw_2</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>lineEdit_workerid_2</tabstop>
+  <tabstop>comboBox_line</tabstop>
+  <tabstop>lineEdit_machineid_2</tabstop>
+  <tabstop>comboBox_result_2</tabstop>
+  <tabstop>lineEdit_use_age</tabstop>
+  <tabstop>tableWidget_2</tabstop>
+  <tabstop>comboBox</tabstop>
+  <tabstop>textEdit_2</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>lineEdit_serino_3</tabstop>
+  <tabstop>lineEdit_line</tabstop>
+  <tabstop>tableWidget_3</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>comboBox_model_3</tabstop>
+  <tabstop>lineEdit_machineid_3</tabstop>
+  <tabstop>comboBox_board_2</tabstop>
+  <tabstop>comboBox_result_3</tabstop>
+  <tabstop>comboBox_2</tabstop>
+  <tabstop>tableWidget_4</tabstop>
+  <tabstop>comboBox_auditor</tabstop>
+  <tabstop>textEdit_3</tabstop>
+  <tabstop>pushButton_5</tabstop>
+  <tabstop>tabWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
