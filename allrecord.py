@@ -10,10 +10,7 @@ class AllUI(QMainWindow, allUI.Ui_MainWindow):
         super(AllUI, self).__init__()
         self.setupUi(self)
         self.setWindowTitle('绑定软件')
-        self.item_bar = QMenuBar(self)
-        self.item_bar.addMenu('权限管理')
-        self.item_bar.addMenu(QIcon('ball.ico'), '权限管理1')
-        self.setMenuBar(self.item_bar)
+        self.setWindowIcon(QIcon('ball.ico'))
 
         self.pushButton.clicked.connect(self.showfix)
 
